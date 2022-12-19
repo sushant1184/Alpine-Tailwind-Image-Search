@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,63 @@
     <title>Alpine Tailwind Image Search</title>
     <link href="src/assets/css/main.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- body starts-->
-      <div class="main">
+    <div class="main">
         <div class="container mx-auto px-4 sm:px-8 lg:px-16 xl:px-20">
-        
-          <!-- hero starts-->
-          <section class="hero">
 
-          </section>
-          <!-- hero ends-->
+            <!-- hero starts-->
+            <section class="hero">
+                <!-- hero headline starts -->
+                <div class="hero-headline flex flex-col items-center justify-center pt-24 text-center">
+                    <h1 class=" font-bold text-3xl text-gray-900">Alpine Tailwind Image Finder</h1>
+                </div>
+                <!-- hero headline ends -->
+                <!-- image search box start -->
+<section class="search pt-8">
+    <div class="search-wrapper">
+      <div class="search-container bg-white rounded flex items-center w-full 
+          p-3 shadow-sm border border-gray-200">
+  
+        <button class="outline-none focus:outline-none">
+          <svg class=" w-5 text-gray-600 h-5 cursor-pointer" fill="none" 
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </button>
+  
+        <input type="search" name="" id=""  
+            placeholder="search for images"
+          x-model="q" class="w-full pl-4 text-sm outline-none focus:outline-none 
+            bg-transparent">
+  
+        <div class="select">
+          <select name="" id="" x-model="image_type"
+            class="text-sm outline-none focus:outline-none bg-transparent">
+            <option value="all" selected>All</option>
+            <option value="photo">Photo</option>
+            <option value="illustration">Illustration</option>
+            <option value="vector">Vector</option>
+          </select>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- image search box end -->
+            </section>
+            <!-- hero ends-->
 
-           <!-- Footer starts-->
-           <!-- Footer ends-->
+            <!-- Footer starts-->
+            <!-- Footer ends-->
 
         </div>
-      </div>
+    </div>
     <!-- body ends-->
     <script type="module" src="src/assets/js/main.js">
     </script>
-  </body>
+</body>
+
 </html>

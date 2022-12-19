@@ -1,5 +1,6 @@
 # alpine-tailwind-image-search
-An image search webpage using Alpine, Tailwind and Vite
+An image search webpage using Alpine, Tailwind, Vite and Pixelbay Image API
+You can type any generic image name and search for the image
 
 ### Requirements
 - [GIT](https://git-scm.com/)
